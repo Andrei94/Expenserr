@@ -1,0 +1,23 @@
+= Requirements
+
+A user is able to add expenses by providing the following details:
+
+* value
+* currency
+* name of the expense
+* frequency of the expense
+
+A user is able to add the his/hers incomes by providing the following details:
+
+* value
+* currency
+* name of income
+
+A user is able to add a recurrent income by providing the following details:
+
+* value
+* currency
+* name of income
+* frequency of income
+
+The frequency can be daily, weekly, monthly or yearly.
