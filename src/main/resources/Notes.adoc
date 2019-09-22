@@ -1,0 +1,1 @@
+* Renaming classes that are in Git, confuses Git and hence conflicts appear
