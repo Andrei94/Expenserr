@@ -1,1 +1,6 @@
+== Lessons
+
 * Renaming classes that are in Git, confuses Git and hence conflicts appear
+
+== Course Ideas
+* change currency from `String` to enum
