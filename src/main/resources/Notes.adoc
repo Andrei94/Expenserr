@@ -4,3 +4,6 @@
 
 == Course Ideas
 * change currency from `String` to enum
+* make sure the domain object doesn't leak on the UI
+-> use the `Income` object as it is, but do a refactoring before finishing;
+perhaps when changing the currency from `String` to enum
