@@ -7,3 +7,6 @@
 * make sure the domain object doesn't leak on the UI
 -> use the `Income` object as it is, but do a refactoring before finishing;
 perhaps when changing the currency from `String` to enum
+* consider breaking the mapping of the test file names with the class they are testing
+* add a negative case for when the income cannot be added,
+by using a factory to create incomes in controller and adding the business validation in the factory
