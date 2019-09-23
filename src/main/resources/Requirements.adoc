@@ -5,12 +5,14 @@ A user is able to add expenses by providing the following details:
 * value
 * currency
 * name of the expense
+* day of month for the expense
 * frequency of the expense
 
 A user is able to add the his/hers incomes by providing the following details:
 
 * value
 * currency
+* day of month for the income
 * name of income
 
 A user is able to add a recurrent income by providing the following details:
@@ -21,3 +23,4 @@ A user is able to add a recurrent income by providing the following details:
 * frequency of income
 
 The frequency can be daily, weekly, monthly or yearly.
+The day of the month must be between 1 and 31.

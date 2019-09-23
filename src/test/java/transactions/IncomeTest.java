@@ -29,10 +29,28 @@ class IncomeTest {
 	}
 
 	@Test
+	void incomeShouldHaveFirstDayOfMonthDefaultDay() {
+		assertEquals(1, income.dayOfIncome);
+	}
+
+	@Test
+	void dayOfIncomeBelowOneShouldBeChangedToOne() {
+		income = new Income("salary", 100, "usd", -1);
+		assertEquals(1, income.dayOfIncome);
+	}
+
+	@Test
+	void dayOfIncomeAboveThirtyOneShouldBeChangedToThirtyOne() {
+		income = new Income("salary", 100, "usd", 32);
+		assertEquals(31, income.dayOfIncome);
+	}
+
+	@Test
 	void incomeShouldBeAbleToAcceptParameters() {
-		income = new Income("salary", 100, "usd");
+		income = new Income("salary", 100, "usd", 15);
 		assertEquals("salary", income.name);
 		assertEquals(100, income.amount);
 		assertEquals("usd", income.currency);
+		assertEquals(15, income.dayOfIncome);
 	}
 }
