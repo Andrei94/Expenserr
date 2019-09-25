@@ -10,3 +10,7 @@ perhaps when changing the currency from `String` to enum
 * consider breaking the mapping of the test file names with the class they are testing
 * add a negative case for when the income cannot be added,
 by using a factory to create incomes in controller and adding the business validation in the factory
+* the console UI uses the MVC pattern
+** the controller holds a reference to a view in order to update it
+** if the controller doesn't update the view, it doesn't hold the reference
+** the controller updates the model using the values provided by the console UI
