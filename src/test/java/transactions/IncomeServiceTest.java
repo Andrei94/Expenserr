@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class IncomeControllerTest {
-	private IncomeController controller;
+class IncomeServiceTest {
+	private IncomeService controller;
 
 	@BeforeEach
 	void setUp() {
-		controller = new IncomeController(new IncomeDAOInMemory());
+		controller = new IncomeService(new IncomeDAOInMemory());
 	}
 
 	@Test

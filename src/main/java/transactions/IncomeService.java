@@ -1,9 +1,9 @@
 package transactions;
 
-public class IncomeController {
+public class IncomeService {
 	private final IncomeDAO incomeDAO;
 
-	public IncomeController(IncomeDAO incomeDAO) {
+	public IncomeService(IncomeDAO incomeDAO) {
 		this.incomeDAO = incomeDAO;
 	}
 
