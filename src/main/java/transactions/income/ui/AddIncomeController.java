@@ -27,7 +27,7 @@ public class AddIncomeController {
 		try {
 			this.incomeOption.amount = Integer.parseUnsignedInt(incomeAmount);
 		} catch(NumberFormatException ex) {
-			throw new InvalidInputException(incomeAmount);
+			throw new InvalidInputException("Invalid number: \"" + incomeAmount + "\"");
 		}
 	}
 
@@ -39,7 +39,7 @@ public class AddIncomeController {
 		if(currency.equals("usd"))
 			this.incomeOption.currency = currency;
 		else
-			throw new InvalidInputException(currency);
+			throw new InvalidInputException("Unknown currency: \"" + currency + "\"");
 	}
 
 	public String getDayOfIncomeMenuText() {
@@ -50,10 +50,10 @@ public class AddIncomeController {
 		try {
 			int day = Integer.parseUnsignedInt(dayOfIncome);
 			if(day < 1 || day > 31)
-				throw new InvalidInputException(dayOfIncome);
+				throw new InvalidInputException("Day of income must be between 1 and 31");
 			this.incomeOption.dayOfIncome = day;
 		} catch(NumberFormatException ex) {
-			throw new InvalidInputException(dayOfIncome);
+			throw new InvalidInputException("Invalid number: \"" + dayOfIncome + "\"");
 		}
 	}
 
