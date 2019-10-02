@@ -1,6 +1,6 @@
 package transactions.income.ui;
 
-import transactions.InvalidInputException;
+import transactions.income.exceptions.InvalidInputException;
 import transactions.income.service.IncomeService;
 
 public class AddIncomeController {

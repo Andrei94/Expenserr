@@ -2,7 +2,7 @@ package transactions.income.ui;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import transactions.InvalidInputException;
+import transactions.income.exceptions.InvalidInputException;
 import transactions.income.dao.IncomeDAOInMemory;
 import transactions.income.service.IncomeService;
 

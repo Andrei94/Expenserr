@@ -2,6 +2,7 @@ package transactions;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import transactions.income.exceptions.InvalidInputException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
