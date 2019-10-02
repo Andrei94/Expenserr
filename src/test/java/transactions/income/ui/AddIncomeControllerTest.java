@@ -30,6 +30,11 @@ class AddIncomeControllerTest {
 	}
 
 	@Test
+	void setIncomeAsEmptyStringThrowsInvalidInputException() {
+		assertThrows(InvalidInputException.class, () -> mainMenuLogic.setIncomeName(""));
+	}
+
+	@Test
 	void getIncomeAmountMenuText() {
 		assertEquals("Enter income amount: ", mainMenuLogic.getIncomeAmountMenuText());
 	}

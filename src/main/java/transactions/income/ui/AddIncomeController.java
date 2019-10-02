@@ -16,6 +16,8 @@ public class AddIncomeController {
 	}
 
 	public void setIncomeName(String name) {
+		if(name.isEmpty())
+			throw new InvalidInputException("Income name cannot be empty");
 		this.incomeOption.name = name;
 	}
 
