@@ -1,5 +1,7 @@
 package transactions;
 
+import transactions.income.ui.AddIncomeOptionMenu;
+
 import java.io.*;
 
 public class MainMenu {

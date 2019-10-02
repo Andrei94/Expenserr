@@ -1,4 +1,4 @@
-package transactions;
+package transactions.income.ui;
 
 public class AddIncomeDTO {
 	public String name;

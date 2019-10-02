@@ -1,4 +1,7 @@
-package transactions;
+package transactions.income.dao;
+
+import transactions.income.service.IncomeDAO;
+import transactions.income.model.Income;
 
 import java.util.ArrayList;
 import java.util.List;

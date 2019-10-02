@@ -1,11 +1,16 @@
-package transactions;
+package transactions.income.ui;
 
-import java.io.*;
+import transactions.income.dao.IncomeDAOInMemory;
+import transactions.income.service.IncomeService;
 
-class AddIncomeOptionMenu {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class AddIncomeOptionMenu {
 	private AddIncomeController addIncomeController = new AddIncomeController(new IncomeService(new IncomeDAOInMemory()));
 
-	void showMenu() {
+	public void showMenu() {
 		System.out.print(addIncomeController.getIncomeNameMenuText());
 		handleIncomeNameInput();
 		System.out.print(addIncomeController.getIncomeAmountMenuText());

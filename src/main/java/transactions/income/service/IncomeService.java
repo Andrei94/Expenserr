@@ -1,4 +1,6 @@
-package transactions;
+package transactions.income.service;
+
+import transactions.income.model.Income;
 
 public class IncomeService {
 	private final IncomeDAO incomeDAO;

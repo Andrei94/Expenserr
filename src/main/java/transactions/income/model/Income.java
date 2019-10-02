@@ -1,4 +1,4 @@
-package transactions;
+package transactions.income.model;
 
 public class Income {
 	public int amount;

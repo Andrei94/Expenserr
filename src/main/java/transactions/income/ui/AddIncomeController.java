@@ -1,4 +1,7 @@
-package transactions;
+package transactions.income.ui;
+
+import transactions.InvalidInputException;
+import transactions.income.service.IncomeService;
 
 public class AddIncomeController {
 	public AddIncomeDTO incomeOption = new AddIncomeDTO();
@@ -12,7 +15,7 @@ public class AddIncomeController {
 		return "Enter income name: ";
 	}
 
-	void setIncomeName(String name) {
+	public void setIncomeName(String name) {
 		this.incomeOption.name = name;
 	}
 

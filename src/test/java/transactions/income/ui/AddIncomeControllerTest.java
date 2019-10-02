@@ -1,9 +1,13 @@
-package transactions;
+package transactions.income.ui;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import transactions.InvalidInputException;
+import transactions.income.dao.IncomeDAOInMemory;
+import transactions.income.service.IncomeService;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class AddIncomeControllerTest {
 	private AddIncomeController mainMenuLogic;

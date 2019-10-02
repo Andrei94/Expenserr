@@ -1,7 +1,7 @@
 package transactions;
 
 public class InvalidInputException extends RuntimeException {
-	InvalidInputException(String option) {
+	public InvalidInputException(String option) {
 		super(option);
 	}
 }
