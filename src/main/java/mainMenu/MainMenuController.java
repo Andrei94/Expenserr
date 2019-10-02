@@ -1,4 +1,4 @@
-package transactions;
+package mainMenu;
 
 import transactions.income.exceptions.InvalidInputException;
 
@@ -9,11 +9,11 @@ public class MainMenuController {
 		this.mainMenu = mainMenu;
 	}
 
-	String getMainMenu() {
+	public String getMainMenu() {
 		return "1. Add income" + System.lineSeparator() + "Enter option: ";
 	}
 
-	void handleMainMenuOption(String inputOption) {
+	public void handleMainMenuOption(String inputOption) {
 		int option;
 		try {
 			option = Integer.parseUnsignedInt(inputOption);

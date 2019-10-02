@@ -1,4 +1,4 @@
-package transactions;
+package mainMenu;
 
 import transactions.income.exceptions.InvalidInputException;
 import transactions.income.ui.AddIncomeOptionMenu;

@@ -14,3 +14,6 @@ by using a factory to create incomes in controller and adding the business valid
 ** the controller holds a reference to a view in order to update it
 ** if the controller doesn't update the view, it doesn't hold the reference
 ** the controller updates the model using the values provided by the console UI
+* after moving the income functionality to its own package, I realized that the main menu could also
+be moved to a separate package, outside the transactions package, since it is common for multiple
+functionalities(i.e. expenses)
