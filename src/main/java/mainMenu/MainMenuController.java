@@ -10,7 +10,7 @@ public class MainMenuController {
 	}
 
 	public String getMainMenu() {
-		return "1. Add income" + System.lineSeparator() + "Enter option: ";
+		return "1. Add income" + System.lineSeparator() + "2. Add expense" + System.lineSeparator() + "Enter option: ";
 	}
 
 	public void handleMainMenuOption(String inputOption) {
@@ -19,6 +19,8 @@ public class MainMenuController {
 			option = Integer.parseUnsignedInt(inputOption);
 			if(option == 1)
 				mainMenu.showAddIncome();
+			else if(option == 2)
+				mainMenu.showAddExpense();
 			else
 				throwInvalidOptionException(inputOption);
 		} catch(NumberFormatException ex) {

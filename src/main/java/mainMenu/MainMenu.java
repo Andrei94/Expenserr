@@ -1,5 +1,6 @@
 package mainMenu;
 
+import transactions.expense.AddExpenseOptionMenu;
 import transactions.income.exceptions.InvalidInputException;
 import transactions.income.ui.AddIncomeOptionMenu;
 
@@ -26,5 +27,10 @@ public class MainMenu {
 	public void showAddIncome() {
 		AddIncomeOptionMenu addIncomeOptionMenu = new AddIncomeOptionMenu();
 		addIncomeOptionMenu.showMenu();
+	}
+
+	public void showAddExpense() {
+		AddExpenseOptionMenu addExpenseOptionMenu = new AddExpenseOptionMenu();
+		addExpenseOptionMenu.showMenu();
 	}
 }
