@@ -17,3 +17,5 @@ by using a factory to create incomes in controller and adding the business valid
 * after moving the income functionality to its own package, I realized that the main menu could also
 be moved to a separate package, outside the transactions package, since it is common for multiple
 functionalities(i.e. expenses)
+* the Income and Expense tests are very similar, perhaps a refactoring to use parameterized tests would
+be a good idea
