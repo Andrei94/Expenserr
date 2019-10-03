@@ -1,7 +1,7 @@
 package mainMenu;
 
 import transactions.expense.ui.AddExpenseOptionMenu;
-import transactions.income.exceptions.InvalidInputException;
+import exceptions.InvalidInputException;
 import transactions.income.ui.AddIncomeOptionMenu;
 
 import java.io.*;

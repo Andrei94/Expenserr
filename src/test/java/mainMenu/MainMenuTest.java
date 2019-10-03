@@ -2,7 +2,7 @@ package mainMenu;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import transactions.income.exceptions.InvalidInputException;
+import exceptions.InvalidInputException;
 
 import static org.junit.jupiter.api.Assertions.*;
 

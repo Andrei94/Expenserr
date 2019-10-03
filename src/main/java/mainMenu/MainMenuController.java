@@ -1,6 +1,6 @@
 package mainMenu;
 
-import transactions.income.exceptions.InvalidInputException;
+import exceptions.InvalidInputException;
 
 public class MainMenuController {
 	private MainMenu mainMenu;

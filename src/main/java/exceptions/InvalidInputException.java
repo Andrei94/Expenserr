@@ -1,4 +1,4 @@
-package transactions.income.exceptions;
+package exceptions;
 
 public class InvalidInputException extends RuntimeException {
 	public InvalidInputException(String msg) {

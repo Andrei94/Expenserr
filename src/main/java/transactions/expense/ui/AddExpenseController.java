@@ -1,7 +1,7 @@
 package transactions.expense.ui;
 
 import transactions.expense.service.ExpenseService;
-import transactions.income.exceptions.InvalidInputException;
+import exceptions.InvalidInputException;
 
 public class AddExpenseController {
 	public AddExpenseDTO expenseDTO = new AddExpenseDTO();
