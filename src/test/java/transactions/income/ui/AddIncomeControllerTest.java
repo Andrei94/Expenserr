@@ -26,7 +26,7 @@ class AddIncomeControllerTest {
 	void setIncomeName() {
 		String incomeName = "salary";
 		mainMenuLogic.setIncomeName(incomeName);
-		assertEquals(incomeName, mainMenuLogic.incomeOption.name);
+		assertEquals(incomeName, mainMenuLogic.incomeDTO.name);
 	}
 
 	@Test
@@ -43,7 +43,7 @@ class AddIncomeControllerTest {
 	void setIncomeAmount() {
 		String incomeAmount = "10";
 		mainMenuLogic.setIncomeAmount(incomeAmount);
-		assertEquals(10, mainMenuLogic.incomeOption.amount);
+		assertEquals(10, mainMenuLogic.incomeDTO.amount);
 	}
 
 	@Test
@@ -60,7 +60,7 @@ class AddIncomeControllerTest {
 	void setIncomeCurrency() {
 		String currency = "usd";
 		mainMenuLogic.setIncomeCurrency(currency);
-		assertEquals(currency, mainMenuLogic.incomeOption.currency);
+		assertEquals(currency, mainMenuLogic.incomeDTO.currency);
 	}
 
 	@Test
@@ -77,7 +77,7 @@ class AddIncomeControllerTest {
 	void setDayOfIncome() {
 		String dayOfIncome = "10";
 		mainMenuLogic.setDayOfIncome(dayOfIncome);
-		assertEquals(10, mainMenuLogic.incomeOption.dayOfIncome);
+		assertEquals(10, mainMenuLogic.incomeDTO.dayOfIncome);
 	}
 
 	@Test
