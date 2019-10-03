@@ -1,4 +1,6 @@
-package transactions.expense;
+package transactions.expense.service;
+
+import transactions.expense.model.Expense;
 
 public class ExpenseService {
 	private final ExpenseDAO expenseDAO;

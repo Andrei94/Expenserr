@@ -1,7 +1,9 @@
-package transactions.expense;
+package transactions.expense.ui;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import transactions.expense.dao.ExpenseDAOInMemory;
+import transactions.expense.service.ExpenseService;
 import transactions.income.exceptions.InvalidInputException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

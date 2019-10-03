@@ -1,4 +1,7 @@
-package transactions.expense;
+package transactions.expense.ui;
+
+import transactions.expense.dao.ExpenseDAOInMemory;
+import transactions.expense.service.ExpenseService;
 
 import java.io.BufferedReader;
 import java.io.IOException;

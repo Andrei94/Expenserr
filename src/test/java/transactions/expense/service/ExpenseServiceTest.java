@@ -1,7 +1,8 @@
-package transactions.expense;
+package transactions.expense.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import transactions.expense.dao.ExpenseDAOInMemory;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

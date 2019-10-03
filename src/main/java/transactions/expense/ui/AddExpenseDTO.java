@@ -1,4 +1,4 @@
-package transactions.expense;
+package transactions.expense.ui;
 
 public class AddExpenseDTO {
 	public String name;

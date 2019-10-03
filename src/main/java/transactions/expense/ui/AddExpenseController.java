@@ -1,5 +1,6 @@
-package transactions.expense;
+package transactions.expense.ui;
 
+import transactions.expense.service.ExpenseService;
 import transactions.income.exceptions.InvalidInputException;
 
 public class AddExpenseController {

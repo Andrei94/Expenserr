@@ -1,6 +1,6 @@
 package mainMenu;
 
-import transactions.expense.AddExpenseOptionMenu;
+import transactions.expense.ui.AddExpenseOptionMenu;
 import transactions.income.exceptions.InvalidInputException;
 import transactions.income.ui.AddIncomeOptionMenu;
 

@@ -1,4 +1,7 @@
-package transactions.expense;
+package transactions.expense.dao;
+
+import transactions.expense.service.ExpenseDAO;
+import transactions.expense.model.Expense;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package transactions.expense;
+package transactions.expense.model;
 
 public class Expense {
 	public int amount;
