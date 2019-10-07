@@ -2,7 +2,7 @@
 
 * Renaming classes that are in Git, confuses Git and hence conflicts appear
 * Using generics for the DAOs would become a pain in the buttocks if the model becomes more complicated,
-since
+since it would be necessary to handle loading, saving, deleting etc. inside the generic DAO
 
 == Course Ideas
 * change currency from `String` to enum
@@ -24,3 +24,5 @@ be a good idea
 * Ask: "Why aren't we using generics just like spring does?" and answer: "Good question, we would get
 to reduce our codebase, but then we would have to be able to make sure that more complex models(things like
 many-to-many) would still be handled correctly and that is not the purpose for right now, at least"
+* currently, the income/expense day is set as a string which holds a number. It might be a good idea to
+change it to date and introduce localization with this change
