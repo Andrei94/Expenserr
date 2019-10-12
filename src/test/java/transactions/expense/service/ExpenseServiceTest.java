@@ -7,15 +7,15 @@ import transactions.expense.dao.ExpenseDAOInMemory;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ExpenseServiceTest {
-	private ExpenseService controller;
+	private ExpenseService service;
 
 	@BeforeEach
 	void setUp() {
-		controller = new ExpenseService(new ExpenseDAOInMemory());
+		service = new ExpenseService(new ExpenseDAOInMemory());
 	}
 
 	@Test
-	void addingDefaultIncomeCreatesAnEntryInDAO() {
-		assertTrue(controller.add("electricity", 100, "usd", 1));
+	void addingExpenseCreatesAnEntryInDAO() {
+		assertTrue(service.add("electricity", 100, "usd", 1));
 	}
 }

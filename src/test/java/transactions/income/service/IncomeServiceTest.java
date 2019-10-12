@@ -7,15 +7,15 @@ import transactions.income.dao.IncomeDAOInMemory;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class IncomeServiceTest {
-	private IncomeService controller;
+	private IncomeService service;
 
 	@BeforeEach
 	void setUp() {
-		controller = new IncomeService(new IncomeDAOInMemory());
+		service = new IncomeService(new IncomeDAOInMemory());
 	}
 
 	@Test
-	void addingDefaultIncomeCreatesAnEntryInDAO() {
-		assertTrue(controller.add("salary", 100, "usd", 1));
+	void addingIncomeCreatesAnEntryInDAO() {
+		assertTrue(service.add("salary", 100, "usd", 1));
 	}
 }
