@@ -24,3 +24,5 @@ A user is able to add a recurrent income by providing the following details:
 
 The frequency can be daily, weekly, monthly or yearly.
 The day of the month must be between 1 and 31.
+
+A user is able to view the current balance of income vs expenses
