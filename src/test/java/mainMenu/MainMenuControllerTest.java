@@ -6,12 +6,12 @@ import exceptions.InvalidInputException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MainMenuTest {
-	private MainMenuController mainMenu;
+class MainMenuControllerTest {
+	private MainMenuController controller;
 
 	@BeforeEach
 	void setUp() {
-		mainMenu = new MainMenuController(new MainMenu());
+		controller = new MainMenuController(new MainMenu());
 	}
 
 	@Test
@@ -19,13 +19,13 @@ class MainMenuTest {
 		assertEquals("1. Add income" + System.lineSeparator() +
 				"2. Add expense" + System.lineSeparator() +
 				"3. Show balance" + System.lineSeparator() +
-				"Enter option: ", mainMenu.getMainMenu());
+				"Enter option: ", controller.getMainMenu());
 	}
 
 	@Test
 	void selectingAddIncomeShowsAddIncomeMenu() {
 		final boolean[] addIncomeCalled = {false};
-		mainMenu = new MainMenuController(new MainMenu() {
+		controller = new MainMenuController(new MainMenu() {
 			@Override
 			public void showAddIncome() {
 				addIncomeCalled[0] = true;
@@ -35,14 +35,14 @@ class MainMenuTest {
 			public void showAddExpense() {
 			}
 		});
-		mainMenu.handleMainMenuOption("1");
+		controller.handleMainMenuOption("1");
 		assertTrue(addIncomeCalled[0]);
 	}
 
 	@Test
 	void selectingAddExpenseShowsAddExpenseMenu() {
 		final boolean[] addExpenseCalled = {false};
-		mainMenu = new MainMenuController(new MainMenu() {
+		controller = new MainMenuController(new MainMenu() {
 			@Override
 			public void showAddIncome() {
 			}
@@ -52,14 +52,14 @@ class MainMenuTest {
 				addExpenseCalled[0] = true;
 			}
 		});
-		mainMenu.handleMainMenuOption("2");
+		controller.handleMainMenuOption("2");
 		assertTrue(addExpenseCalled[0]);
 	}
 
 	@Test
 	void selectingShowBalanceShowsTheBalance() {
 		final boolean[] showBalanceCalled = {false};
-		mainMenu = new MainMenuController(new MainMenu() {
+		controller = new MainMenuController(new MainMenu() {
 			@Override
 			public void showAddIncome() {
 			}
@@ -73,17 +73,17 @@ class MainMenuTest {
 				showBalanceCalled[0] = true;
 			}
 		});
-		mainMenu.handleMainMenuOption("3");
+		controller.handleMainMenuOption("3");
 		assertTrue(showBalanceCalled[0]);
 	}
 
 	@Test
 	void handlingTextOptionThrowsException() {
-		assertThrows(InvalidInputException.class, () -> mainMenu.handleMainMenuOption("abc"));
+		assertThrows(InvalidInputException.class, () -> controller.handleMainMenuOption("abc"));
 	}
 
 	@Test
 	void handlingInvalidOptionThrowsException() {
-		assertThrows(InvalidInputException.class, () -> mainMenu.handleMainMenuOption("0"));
+		assertThrows(InvalidInputException.class, () -> controller.handleMainMenuOption("0"));
 	}
 }
