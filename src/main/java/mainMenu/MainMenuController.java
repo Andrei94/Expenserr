@@ -10,7 +10,10 @@ public class MainMenuController {
 	}
 
 	public String getMainMenu() {
-		return "1. Add income" + System.lineSeparator() + "2. Add expense" + System.lineSeparator() + "Enter option: ";
+		return "1. Add income" + System.lineSeparator() +
+				"2. Add expense" + System.lineSeparator() +
+				"3. Show balance" + System.lineSeparator() +
+				"Enter option: ";
 	}
 
 	public void handleMainMenuOption(String inputOption) {
@@ -21,6 +24,8 @@ public class MainMenuController {
 				mainMenu.showAddIncome();
 			else if(option == 2)
 				mainMenu.showAddExpense();
+			else if(option == 3)
+				mainMenu.showBalance();
 			else
 				throwInvalidOptionException(inputOption);
 		} catch(NumberFormatException ex) {

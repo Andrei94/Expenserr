@@ -26,3 +26,10 @@ to reduce our codebase, but then we would have to be able to make sure that more
 many-to-many) would still be handled correctly and that is not the purpose for right now, at least"
 * currently, the income/expense day is set as a string which holds a number. It might be a good idea to
 change it to date and introduce localization with this change
+* using a getAll method is not very optimal, since there may be many entries in the data source; however,
+for the transactions of a person, this number is usually very small; an improvement would be to hold the
+initial balance as a number and increment/decrement that number when a new transaction happens
+* present also disadvantages
+** e.g. using the initial balance requires loading/storing it every time the app starts/shuts down;
+this would require updating all the required places with the aforementioned logic; this can be a potential
+source of bugs, since missing one of them could corrupt the balance

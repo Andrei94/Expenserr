@@ -1,10 +1,13 @@
 package mainMenu;
 
-import transactions.expense.ui.AddExpenseOptionMenu;
 import exceptions.InvalidInputException;
+import transactions.balance.ui.ShowBalanceOptionMenu;
+import transactions.expense.ui.AddExpenseOptionMenu;
 import transactions.income.ui.AddIncomeOptionMenu;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class MainMenu {
 	private MainMenuController mainMenuController = new MainMenuController(this);
@@ -32,5 +35,10 @@ public class MainMenu {
 	public void showAddExpense() {
 		AddExpenseOptionMenu addExpenseOptionMenu = new AddExpenseOptionMenu();
 		addExpenseOptionMenu.showMenu();
+	}
+
+	public void showBalance() {
+		ShowBalanceOptionMenu showBalanceOptionMenu = new ShowBalanceOptionMenu();
+		showBalanceOptionMenu.showMenu();
 	}
 }

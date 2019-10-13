@@ -18,6 +18,7 @@ class MainMenuTest {
 	void getMenuShouldReturnMainMenu() {
 		assertEquals("1. Add income" + System.lineSeparator() +
 				"2. Add expense" + System.lineSeparator() +
+				"3. Show balance" + System.lineSeparator() +
 				"Enter option: ", mainMenu.getMainMenu());
 	}
 
@@ -53,6 +54,27 @@ class MainMenuTest {
 		});
 		mainMenu.handleMainMenuOption("2");
 		assertTrue(addExpenseCalled[0]);
+	}
+
+	@Test
+	void selectingShowBalanceShowsTheBalance() {
+		final boolean[] showBalanceCalled = {false};
+		mainMenu = new MainMenuController(new MainMenu() {
+			@Override
+			public void showAddIncome() {
+			}
+
+			@Override
+			public void showAddExpense() {
+			}
+
+			@Override
+			public void showBalance() {
+				showBalanceCalled[0] = true;
+			}
+		});
+		mainMenu.handleMainMenuOption("3");
+		assertTrue(showBalanceCalled[0]);
 	}
 
 	@Test
