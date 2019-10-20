@@ -6,23 +6,30 @@ A user is able to add expenses by providing the following details:
 * currency
 * name of the expense
 * day of month for the expense
-* frequency of the expense
 
-A user is able to add the his/hers incomes by providing the following details:
+A user is able to add the incomes by providing the following details:
 
 * value
 * currency
 * day of month for the income
 * name of income
 
-A user is able to add a recurrent income by providing the following details:
-
-* value
-* currency
-* name of income
-* frequency of income
-
-The frequency can be daily, weekly, monthly or yearly.
 The day of the month must be between 1 and 31.
 
 A user is able to view the current balance of income vs expenses
+
+== Add income
+1. User selects from the main menu the "Add income" option
+2. User inserts income details
+3. The income is saved
+* Providing invalid input shows an invalid message and adding the rest of the details is aborted
+
+== Add expense
+1. User selects from the main menu the "Add expense" option
+2. User inserts expense details
+3. The expense is saved
+* Providing invalid input shows an invalid message and adding the rest of the details is aborted
+
+== Show balance
+1. User selects from the main menu the "Show balance" option
+2. The current balance is shown to the user
